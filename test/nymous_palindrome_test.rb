@@ -28,4 +28,9 @@ class NymousPalindromeTest < Minitest::Test
   def test_integer_palindrome
     assert 1234321.palindrome?
   end
+
+  def test_empty_string_is_not_a_palindrome
+    refute "".palindrome?
+    refute "  ".palindrome?
+  end
 end

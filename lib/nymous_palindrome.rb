@@ -7,6 +7,8 @@ module NymousPalindrome
   #   "Racecar".palindrome? #=> true
   # @return [Boolean]
   def palindrome?
+    return false if processed_content.empty?
+
     processed_content == processed_content.reverse
   end
 
